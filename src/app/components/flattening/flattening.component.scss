@@ -1,0 +1,11 @@
+.solution {
+  .code {
+    display: flex;
+    background-color: #f6f6f6;
+  }
+  .bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem 0;
+  }
+}

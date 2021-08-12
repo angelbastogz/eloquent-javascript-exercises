@@ -1,0 +1,60 @@
+<h2>Flattening</h2>
+
+<div class="description">
+  <p>
+    Use the reduce method in combination with the concat method to “flatten” an array of arrays into a single array
+    that has all the elements of the original arrays.
+  </p>
+</div>
+
+<div class="solution">
+  <h4>Test's parameters</h4>
+  <pre class="code">
+    <code>
+      Input = {{ input | arrayFormatting }}
+      Expected Result = {{ expectedResult | arrayFormatting }}
+
+      Result = {{ result | arrayFormatting }}
+
+      {{ isCorrect ? 'Perfect!' : 'You need to work on the solution' }}
+    </code>
+  </pre>
+
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Solution
+        </mat-panel-title>
+        <mat-panel-description>
+          {{ !panelOpenState ? "Open to see the solution" : "" }}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <pre class="code">
+        <code>
+          // First implementation
+          flatten(array: Array&#60;any>): Array&#60;any> &#123;
+            return array.reduce((a, b, index) => &#123;
+              // The first time, we need to transform a to be an array
+              if (index === 1) &#123;
+                  a = [a];
+              }
+              // Each new item, needs to be validate to know if it is an array
+              if (Array.isArray(b)) &#123;
+                  a = a.concat(b);
+              } else &#123;
+                  a.push(b);
+              }
+              return a;
+          });
+        }
+        </code>
+      </pre>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <div class="bottom">
+    <button mat-raised-button color="accent" (click)="this.result = flatten(input)">Test</button>
+  </div>
+</div>
