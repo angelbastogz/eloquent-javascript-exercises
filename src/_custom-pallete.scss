@@ -1,0 +1,164 @@
+@use 'sass:map';
+// @deprecated renamed to $dark-primary-text.
+// @breaking-change 8.0.0
+$black-87-opacity: rgba(black, 0.87);
+// @deprecated renamed to $light-primary-text.
+// @breaking-change 8.0.0
+$white-87-opacity: rgba(white, 0.87);
+// @deprecated use $dark-[secondary-text,disabled-text,dividers,focused] instead.
+// @breaking-change 8.0.0
+$black-12-opacity: rgba(black, 0.12);
+// @deprecated use $light-[secondary-text,disabled-text,dividers,focused] instead.
+// @breaking-change 8.0.0
+$white-12-opacity: rgba(white, 0.12);
+// @deprecated use $dark-[secondary-text,disabled-text,dividers,focused] instead.
+// @breaking-change 8.0.0
+$black-6-opacity: rgba(black, 0.06);
+// @deprecated use $light-[secondary-text,disabled-text,dividers,focused] instead.
+// @breaking-change 8.0.0
+$white-6-opacity: rgba(white, 0.06);
+
+$dark-primary-text: rgba(black, 0.87);
+$dark-secondary-text: rgba(black, 0.54);
+$dark-disabled-text: rgba(black, 0.38);
+$dark-dividers: rgba(black, 0.12);
+$dark-focused: rgba(black, 0.12);
+$light-primary-text: white;
+$light-secondary-text: rgba(white, 0.7);
+$light-disabled-text: rgba(white, 0.5);
+$light-dividers: rgba(white, 0.12);
+$light-focused: rgba(white, 0.12);
+
+$custom-yellow-palette: (
+  50: #fefde5,
+  100: #fdf8c0,
+  200: #fcf395,
+  300: #faef69,
+  400: #f8ea44,
+  500: #f5e50f,
+  600: #f8d50e,
+  700: #f8bc00,
+  800: #f7a400,
+  900: #f67800,
+  A100: #eae38c,
+  A200: #f1e44c,
+  A400: #eacb1d,
+  A700: #f5ac1e,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $dark-primary-text,
+    700: $dark-primary-text,
+    800: $dark-primary-text,
+    900: $dark-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  )
+);
+
+$custom-pink-palette: (
+  50: #ffe5ed,
+  100: #ffbcd3,
+  200: #ff90b5,
+  300: #ff6297,
+  400: #ff3b7f,
+  500: #ff0267,
+  600: #ed0065,
+  700: #d70060,
+  800: #c2005d,
+  900: #9e0057,
+  A100: #f38eb0,
+  A200: #e83f7a,
+  A400: #d31064,
+  A700: #b00859,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $light-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+// dark theme colors
+
+$custom-black-palette: (
+  50: #e6e6e6,
+  100: #cdcdcd,
+  200: #b4b4b3,
+  300: #9b9b9a,
+  400: #828281,
+  500: #696868,
+  600: #504f4f,
+  700: #373635,
+  800: #1e1d1c,
+  900: #050403,
+  A100: #c2c2c1,
+  A200: #8f8f8d,
+  A400: #605f5f,
+  A700: #1f1f1e,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+$custom-loulou-palette: (
+  50: #efe7ed,
+  100: #dfcfdb,
+  200: #ceb7c9,
+  300: #be9fb7,
+  400: #ae88a5,
+  500: #9e7092,
+  600: #8e5880,
+  700: #7d406e,
+  800: #6d285c,
+  900: #5d104a,
+  A100: #e3cbde,
+  A200: #c096b6,
+  A400: #a46694,
+  A700: #81306d,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
