@@ -34,6 +34,9 @@
       <pre class="code">
         <code>
           // First implementation
+          // The first implementation is wrong because when
+          // input = [1, [2, [3, 4], 5], 6]
+          // it returns [1, 2, [3, 4], 5, 6]
           flatten(array: Array&#60;any>): Array&#60;any> &#123;
             return array.reduce((a, b, index) => &#123;
               // The first time, we need to transform a to be an array
@@ -47,8 +50,23 @@
                   a.push(b);
               }
               return a;
-          });
-        }
+            });
+          }
+
+          // Second implementation
+          flattenArray(array: Array&#60;any>): Array&#60;any> &#123;
+            return array.reduce((a, b, index) => &#123;
+              if (index == 1) &#123;
+                a = [a];
+              }
+              if (Array.isArray(b)) &#123;
+                a = a.concat(this.flattenArray(b));
+              } else &#123;
+                a.push(b);
+              }
+              return a;
+            });
+          }
         </code>
       </pre>
     </mat-expansion-panel>
